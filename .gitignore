@@ -1,11 +1,11 @@
 # Data
 data/raw/
-data/processed/
+#data/processed/
 *.pickle
 *.pkl
 
 # Outputs
-out/
+#out/models/
 
 # Python
 __pycache__/
