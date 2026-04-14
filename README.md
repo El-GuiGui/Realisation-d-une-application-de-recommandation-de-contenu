@@ -59,8 +59,6 @@ Evaluation sur 5 000 utilisateurs (split temporel : dernier clic = test) :
 | Content-Based (cosinus)       | 0.0026    | 0.0018               | 10 194     |
 | Collaborative Filtering (ALS) | 0.2628    | 0.2086               | 206        |
 
-Reference metriques : Benjamin Wang (2021), Ranking Evaluation Metrics for Recommender Systems, Towards Data Science.
-
 ## Architecture
 
 Le systeme de recommandation est deploye en serverless sur AWS :
@@ -106,17 +104,15 @@ streamlit run app/app_streamlit.py
 
 Pour choisir l'un ou l'autre, modifier dans app/app_streamlit.py :
 
-'''
-
 # URL local
 
-API_URL = os.environ.get("API_URL", "")
 '''
-
+API_URL = os.environ.get("API_URL", "")
 '''
 
 # URL pour lambda
 
+'''
 API_URL = "https://xxxxxxxxx.execute-api.eu-north-1.amazonaws.com/prod/recommend"
 '''
 
@@ -133,3 +129,5 @@ API_URL = "https://xxxxxxxxx.execute-api.eu-north-1.amazonaws.com/prod/recommend
 9. https://github.com/benfred/implicit
 10. https://www.kaggle.com/code/gspmoreira/recommender-systems-in-python-101
 11. https://github.com/gabrielspmoreira/chameleon_recsys
+
+Reference metriques : Benjamin Wang (2021), Ranking Evaluation Metrics for Recommender Systems, Towards Data Science.
