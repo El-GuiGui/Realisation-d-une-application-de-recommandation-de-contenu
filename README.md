@@ -106,15 +106,15 @@ Pour choisir l'un ou l'autre, modifier dans app/app_streamlit.py :
 
 # URL local
 
-'''
+```bash
 API_URL = os.environ.get("API_URL", "")
-'''
+```
 
 # URL pour lambda
 
-'''
+```bash
 API_URL = "https://xxxxxxxxx.execute-api.eu-north-1.amazonaws.com/prod/recommend"
-'''
+```
 
 ## Sources :
 
